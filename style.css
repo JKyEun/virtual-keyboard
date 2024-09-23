@@ -13,11 +13,19 @@ body {
 }
 
 .key {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10px;
   border: 1px solid #000;
   width: 60px;
   height: 200px;
   cursor: pointer;
   user-select: none;
+}
+
+.key.active {
+  background-color: grey;
 }
 
 .white {
@@ -31,6 +39,7 @@ body {
   margin: 0 -20px;
   z-index: 1;
   position: relative;
+  color: white;
 }
 
 .play-btn {
@@ -42,4 +51,18 @@ body {
   margin-top: 20px;
   text-align: center;
   line-height: 40px;
+}
+
+.octave-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.octave-control button {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  cursor: pointer;
 }
